@@ -1,0 +1,24 @@
+.hero-link {
+  animation: hero-link-blink 1.2s ease-in-out infinite;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  animation-play-state: paused;
+}
+
+@keyframes hero-link-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-link {
+    animation: none;
+  }
+}
